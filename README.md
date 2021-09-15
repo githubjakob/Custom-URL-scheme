@@ -1,4 +1,7 @@
 # Custom URL scheme Cordova/PhoneGap Plugin
+
+> Fork that replaces URL_SCHEME with PACKAGE_NAME variable
+
 #### launch your app by a link like this: `mycoolapp://`
 
 [![NPM version][npm-image]][npm-url]
