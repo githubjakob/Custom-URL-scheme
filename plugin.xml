@@ -48,7 +48,6 @@
   <!-- android -->
   <platform name="android">
     <preference name="ANDROID_HOST" default=" " />
-    <preference name="ANDROID_PATHPREFIX" default="/" />
 
     <js-module src="www/android/LaunchMyApp.js" name="LaunchMyApp">
       <clobbers target="window.plugins.launchmyapp" />
@@ -75,7 +74,7 @@
         <category android:name="android.intent.category.BROWSABLE" />
         <data android:scheme="$PACKAGE_NAME"
               android:host="$ANDROID_HOST"
-              android:pathPrefix="$ANDROID_PATHPREFIX" />
+              android:pathPrefix="/cordova/$PACKAGE_NAME/success" />
       </intent-filter>
     </config-file>
   </platform>
