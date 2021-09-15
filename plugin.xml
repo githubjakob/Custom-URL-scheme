@@ -21,7 +21,6 @@
 
   <issue>https://github.com/EddyVerbruggen/Custom-URL-scheme/issues</issue>
 
-  <preference name="URL_SCHEME" />
   <preference name="PACKAGE_NAME" />
 
   <engines>
@@ -48,7 +47,6 @@
 
   <!-- android -->
   <platform name="android">
-    <preference name="ANDROID_SCHEME" default=" " />
     <preference name="ANDROID_HOST" default=" " />
     <preference name="ANDROID_PATHPREFIX" default="/" />
 
@@ -75,7 +73,7 @@
         <action android:name="android.intent.action.VIEW" />
         <category android:name="android.intent.category.DEFAULT" />
         <category android:name="android.intent.category.BROWSABLE" />
-        <data android:scheme="$ANDROID_SCHEME"
+        <data android:scheme="$PACKAGE_NAME"
               android:host="$ANDROID_HOST"
               android:pathPrefix="$ANDROID_PATHPREFIX" />
       </intent-filter>
